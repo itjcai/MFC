@@ -87,6 +87,7 @@ void CMFCDlg::OnPaint()
 
 void CMFCDlg::OnStart()
 {
+	OnClear();
 	LPTSTR str=_T("started");
 	SetDlgItemText(IDC_STATIC,str);
 	RefreshConstants;
